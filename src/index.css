@@ -1,0 +1,138 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #0e0e10;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    padding: 2rem 1rem;
+
+
+}
+
+/* ✅ Full-width container */
+.app-container {
+    background: rgba(25, 25, 30, 0.85);
+    backdrop-filter: blur(10px);
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.1);
+    width: 70%;
+    height: auto;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+/* Header */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #00ffc8;
+    text-shadow: 0 0 10px rgba(0, 255, 200, 0.6);
+}
+
+/* Input Section */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input[type="text"] {
+    padding: 0.75rem 1rem;
+    border-radius: 0.6rem;
+    border: none;
+    background: #1a1a1d;
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: inset 0 0 10px rgba(0, 255, 200, 0.1);
+}
+
+/* Button */
+button {
+    background: linear-gradient(135deg, #00ffc8, #007e7a);
+    color: #000;
+    padding: 0.75rem 1rem;
+    border: none;
+    border-radius: 0.6rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(0, 255, 200, 0.4);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #00ffd5, #00c9c5);
+    box-shadow: 0 0 20px rgba(0, 255, 200, 0.6);
+}
+
+/* Dropdown */
+select {
+    background: #1a1a1d;
+    color: #fff;
+    padding: 0.7rem;
+    border-radius: 0.6rem;
+    font-size: 1rem;
+    border: 1px solid #00ffc8;
+    outline: none;
+}
+
+/* Loading Animation */
+.loading {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #ffed4d;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0.4;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Output Markdown Styling */
+.markdown-container {
+    margin-top: 2rem;
+    background: #141416;
+    border-radius: 0.8rem;
+    padding: 1rem;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.05);
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #e4e4e4;
+}
+
+.markdown-container p {
+    margin-bottom: 1rem;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 500px) {
+    .app-container {
+        padding: 1.2rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    input[type="text"],
+    button,
+    select {
+        font-size: 0.95rem;
+    }
+}
